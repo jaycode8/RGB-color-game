@@ -5,5 +5,5 @@
 </div>
 <br/>
 
-<img src="https://github.com/jaycode8/log_Reg-Form/blob/main/sample/sample.png" alt="sampleform" />
+<img src="https://github.com/jaycode8/RGB-color-game/blob/main/colorgame.png" alt="colorgame.png" />
 
