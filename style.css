@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Handlee", cursive;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #202725;
+}
+.container .header,
+.controlls,
+.colorContainer,
+.colorContainer section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: #808080;
+}
+.header {
+    padding: 1rem;
+}
+.header span {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.controlls {
+    margin: 2rem 0;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 3rem;
+}
+.controlls button,
+select {
+    width: 6rem;
+    height: 1.8rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.controlls button {
+    width: auto;
+}
+.colorContainer {
+    padding-top: 1rem;
+}
+.colorContainer section {
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.colorContainer section span {
+    width: 100%;
+    height: 9rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    background: #171c22;
+    transition: all 0.5s ease;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    background: #121212;
+}
+footer p {
+    font-size: 1.2rem;
+    color: bisque;
+}
+p a {
+    text-decoration: none;
+    color: bisque;
+    transition: all 0.5s ease;
+}
+p a:hover {
+    color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+    .colorContainer section {
+        width: 95%;
+        gap: 1rem;
+    }
+    .colorContainer section span {
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header {
+        padding: 0.5rem;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    .header span {
+        font-size: 1.6rem;
+        margin-top: 0.3rem;
+    }
+    .controlls {
+        gap: 2rem;
+    }
+    .controlls button,
+    select {
+        width: 6rem;
+        font-size: 1rem;
+    }
+    .colorContainer section span {
+        width: 90%;
+        height: 5rem;
+        border-radius: .4rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}

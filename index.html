@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Colour game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>A simple color game</h1>
+                <span>RGB</span>
+            </div>
+            <div class="controlls">
+                <button onclick="resetGame()">New game</button>
+                <select onchange="change()">
+                    <option value="easy">Easy</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="colorContainer">
+                <section></section>
+            </div>
+
+            <footer>
+                <p>
+                    &copy; <span id="date"></span><a href="https://james-mumo.000webhostapp.com/" target="_blank"> JayTech </a> | All Rights Reserved
+                </p>
+            </footer>
+        </div>
+        
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>
