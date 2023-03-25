@@ -7,3 +7,5 @@
 
 <img src="https://github.com/jaycode8/RGB-color-game/blob/main/colorgame.png" alt="colorgame.png" />
 
+ git clone https://github.com/jaycode8/RGB-color-game.git
+
